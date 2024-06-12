@@ -1,11 +1,9 @@
 ---
-title: "Robust Queue Inference from Waiting Times"
+title: "An example journal article"
 authors:
-- Chaithanya Bandi
 - admin
-- Alexej Proskynitopoulos
+- Robert Ford
 author_notes:
-- "Equal contribution"
 - "Equal contribution"
 - "Equal contribution"
 date: "2015-09-01T00:00:00Z"
@@ -20,23 +18,23 @@ publishDate: "2017-01-01T00:00:00Z"
 publication_types: ["article-journal"]
 
 # Publication name and optional abbreviated publication name.
-publication: "*Operations Research, 72*(2):459-480"
+publication: "*Journal of Source Themes, 1*(1)"
 publication_short: ""
 
-abstract: Observational data from queueing systems are of great practical interest in many application areas because they can be leveraged for better statistical inference of service processes. However, these observations often only provide partial information of the system for various reasons in real-world settings. Moreover, their complex temporal dependence on the queueing dynamics and the absence of distributional information on the model primitives render estimation of queueing systems remarkably challenging. To this end, we consider the problem of inferring service times from waiting time observations. Specifically, we propose an inference framework based on robust optimization, where service times are described via sets that are calibrated by the observed waiting times. We provide conditions under which these data-driven uncertainty sets become asymptotically confident estimators of the service process; that is, they contain unknown service times almost surely as the number of observations grows. We also introduce tractable optimization formulations to compute bounds of various service time characteristics such as moments and risk measures. In this way, our approach is data driven and free of distributional assumptions on unknown model primitives, which is required by existing methods. We also generalize the proposed inference framework to tandem queues and feed-forward networks, offering broader capability in estimation of real-world queueing systems. Our simulation study demonstrates that the proposed approach easily incorpo- rates information of arrival processes such as moments and correlations and performs consistently well on queueing networks under various settings.
+abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
 
 # Summary. An optional shortened abstract.
-summary: optional
+summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
 
 tags:
-- Queue Inference
-featured: true
+- Source Themes
+featured: false
 
 # links:
 # - name: ""
-url: "https://pubsonline.informs.org/doi/10.1287/opre.2022.0091"
-url_pdf: ''
-url_code: ''
+#   url: ""
+url_pdf: http://arxiv.org/pdf/1512.04133v1
+url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
 url_dataset: ''
 url_poster: ''
 url_project: ''
@@ -63,9 +61,15 @@ projects: []
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
-slides: ""
+slides: example
 ---
 
+{{% callout note %}}
+Click the *Cite* button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+{{% /callout %}}
 
+{{% callout note %}}
+Create your slides in Markdown - click the *Slides* button to check out the example.
+{{% /callout %}}
 
 Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/).
