@@ -8,11 +8,11 @@ author_notes:
 - "Equal contribution"
 - "Equal contribution"
 - "Equal contribution"
-date: "2015-09-01T00:00:00Z"
+date: "2024-03-01"
 doi: "10.1287/opre.2022.0091"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2017-01-01T00:00:00Z"
+publishDate: "2024-06-12"
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
@@ -26,7 +26,7 @@ publication_short: ""
 abstract: Observational data from queueing systems are of great practical interest in many application areas because they can be leveraged for better statistical inference of service processes. However, these observations often only provide partial information of the system for various reasons in real-world settings. Moreover, their complex temporal dependence on the queueing dynamics and the absence of distributional information on the model primitives render estimation of queueing systems remarkably challenging. To this end, we consider the problem of inferring service times from waiting time observations. Specifically, we propose an inference framework based on robust optimization, where service times are described via sets that are calibrated by the observed waiting times. We provide conditions under which these data-driven uncertainty sets become asymptotically confident estimators of the service process; that is, they contain unknown service times almost surely as the number of observations grows. We also introduce tractable optimization formulations to compute bounds of various service time characteristics such as moments and risk measures. In this way, our approach is data driven and free of distributional assumptions on unknown model primitives, which is required by existing methods. We also generalize the proposed inference framework to tandem queues and feed-forward networks, offering broader capability in estimation of real-world queueing systems. Our simulation study demonstrates that the proposed approach easily incorporates information of arrival processes such as moments and correlations and performs consistently well on queueing networks under various settings.
 
 # Summary. An optional shortened abstract.
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
+summary: ""
 
 tags:
 - Queue Inference
