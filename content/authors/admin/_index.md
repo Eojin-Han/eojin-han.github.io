@@ -157,4 +157,6 @@ awards:
 
 ## About Me
 
-Eojin Han is an (incoming) assistant professor of IT, Analytics and Operations in Mendoza College of Business at the University of Notre Dame. Before joining Notre Dame, he was an assistant professor of Operations Research and Engineering Management at Southern Methodist University.
+I am an (incoming) assistant professor of IT, Analytics and Operations in Mendoza College of Business at the University of Notre Dame. Before joining Notre Dame, I was an assistant professor of Operations Research and Engineering Management at Southern Methodist University. My research is broadly on establishing mathematical models and tools to make robust decisions, with guarantees on their operational performances against mis-specified uncertainty models. This has a significant impact in real-world settings, since decisions need to be made under uncertainty which is often incorrectly characterized due to data of insufficient size or incompleteness. I use tools from robust and distributionally robust optimization and combine optimization, analytics, and domain-specific insights to solve real-world problems of high practical relevance and societal impacts. To this end, my research lies at the intersection of optimization and analytics with application areas such as healthcare, supply chains, and service systems.
+
+
