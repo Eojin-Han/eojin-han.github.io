@@ -27,7 +27,9 @@ abstract: Sequential decision-making often requires dynamic policies, which are 
 summary: ""
 
 tags:
+- Policy Improvements in Higher Dimensions
 - Robust Optimization
+- Decision Rules
 featured: true
 
 # links:

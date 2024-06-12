@@ -29,6 +29,7 @@ abstract: We introduce a new class of adaptive policies called periodic-affine p
 summary: ""
 
 tags:
+- Robust Optimization for Healthcare Delivery
 - Robust Optimization
 - Healthcare
 featured: true

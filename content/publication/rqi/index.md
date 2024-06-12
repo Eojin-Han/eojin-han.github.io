@@ -29,9 +29,10 @@ abstract: Observational data from queueing systems are of great practical intere
 summary: ""
 
 tags:
+- Inference from Indirect Observations
 - Queue Inference
 - Robust Optimization
-- Probabilistic Guarantees
+- Service Systems
 featured: true
 
 # links:

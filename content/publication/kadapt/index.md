@@ -29,8 +29,10 @@ abstract: In many real applications, practitioners prefer policies that are inte
 summary: ""
 
 tags:
+- Simple and Interpretable Decision-Making
 - Distributionally Robust Optimization
 - Finite Adaptability
+- Decision Rules
 featured: true
 
 # links:
