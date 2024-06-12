@@ -35,11 +35,11 @@ sections:
       title: '📚 My Research'
       subtitle: ''
       text: |-
-        Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
-
-        I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
+        Almost all operational decision-making processes involve various uncertain parameters, and it is crucial to predict them. However, no one can really make perfect predictions, and all predictive models (parametric distributions, machine learning models, etc.) are always mis-specified -- in other words, "All Models are Wrong," a common aphorism in statistics. This is because we are only given limited information in reality!
         
-        Please reach out to collaborate 😃
+        I study how operational decisions should be made to reduce risk against limited information about uncertainty. In my research, some of questions I am trying to answer is: How should healthcare providers implement their dynamic decisions to protect against the risk of not satisfying their service agreements? How can one make inference on some key parameters of service systems when data only reveals indirect information? If a retailer replenishes its inventory while competing with others, how many orders should be placed when demand distribution is not given? There are many, many questions to be answered, and this is why I love my research 😊
+        
+        I am always interested in collaborations! Please reach out to me to share your thoughts and engage in inspiring discussions 😃
     design:
       columns: '1'
   - block: collection
