@@ -44,37 +44,19 @@ interests:
   - Prescriptive Analytics
 
 education:
-  - area: PhD Artificial Intelligence
-    institution: Stanford University
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
+  - area: Ph.D., Industrial Engineering and Management Sciences
+    institution: Northwestern University
+    date_start: 2015-09-01
+    date_end: 2020-07-01
     button:
       text: 'Read Thesis'
-      url: 'https://example.com'
-  - area: MEng Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+      url: 'https://www.proquest.com/openview/601a9a66ea6098c37123673ff98b8edb/1?pq-origsite=gscholar&cbl=18750&diss=y'
+  - area: B.S., Electrical Engineering and Mathematics
+    institution: Seoul National University
+    date_start: 2008-03-01
+    date_end: 2015-02-28
     summary: |
-      GPA: 3.8/4.0
-
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - area: BSc Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      GPA: 3.4/4.0
-      
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      Including two-years mandatory military service
 work:
   - position: Director of Cloud Infrastructure
     company_name: GenCoin
