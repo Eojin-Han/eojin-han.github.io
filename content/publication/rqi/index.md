@@ -36,7 +36,7 @@ featured: true
 
 # links:
 # - name: ""
-url: 'https://pubsonline.informs.org/doi/10.1287/opre.2022.0091'
+url: "https://pubsonline.informs.org/doi/10.1287/opre.2022.0091"
 url_pdf: 'https://pubsonline.informs.org/doi/10.1287/opre.2022.0091'
 url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
 url_dataset: ''
