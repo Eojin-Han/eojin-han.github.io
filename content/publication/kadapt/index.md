@@ -8,7 +8,7 @@ author_notes:
 - "Equal contribution"
 - "Equal contribution"
 - "Equal contribution"
-date: "2024-06-12"
+date: "2023-12-01"
 doi: "10.1287/opre.2022.2273"
 
 # Schedule page publish date (NOT publication's date).
