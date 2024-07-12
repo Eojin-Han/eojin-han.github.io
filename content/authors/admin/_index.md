@@ -157,7 +157,7 @@ awards:
 
 ## About Me
 
-I am an (incoming) assistant professor of IT, Analytics and Operations in Mendoza College of Business at the University of Notre Dame. Before joining Notre Dame, I was an assistant professor of Operations Research and Engineering Management at Southern Methodist University. My research is broadly on using operations research and analytics to address operational challenges arising in healthcare, supply chains and service systems. For details on my research, please see below.
+I am an assistant professor of IT, Analytics and Operations in Mendoza College of Business at the University of Notre Dame. Before joining Notre Dame, I was an assistant professor of Operations Research and Engineering Management at Southern Methodist University for four years. My research is broadly on using operations research and analytics to address operational challenges arising in healthcare, supply chains and service systems. For details on my research, please see below.
 
 My first name Eojin is pronounced as (first "a" of award) + (jean), but I'm used to all different ways of my name being pronounced 😉
 
