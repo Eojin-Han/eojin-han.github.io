@@ -66,5 +66,8 @@ projects: []
 slides: ""
 ---
 
+If you find yourself in a maze, escaping can be incredibly challenging unless you can view the maze and your position from a bird’s-eye perspective. Likewise, seeing things from a higher dimension opens up new perspectives and solution methods. This concept is also illustrated in the movie Interstellar, where Cooper goes into a black hole to send a message to his daughter in the past, leveraging the advantages of being in higher dimensions (I am not talking about the scientific feasibility of that scene!).
 
-Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/).
+Analogously in mathematical optimization, the approach of treating sets as projections from higher to lower dimensions is known as lifting. This technique has been extensively studied in combinatorial and integer optimization, and more recently in robust optimization as well. In dynamic robust optimization problems, a question is: How should we lift uncertainty sets to higher dimensions to solve these problems, ensuring both theoretical performance guarantees and computational efficiency? In our recently published article in Management Science (https://lnkd.in/erdvrTQ5), we introduce what we call "nonparametric liftings" to address this challenge.
+
+<!-- Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/). -->
