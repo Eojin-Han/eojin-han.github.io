@@ -1,52 +1,61 @@
-# [Hugo Academic CV Theme](https://github.com/HugoBlox/theme-academic-cv)
+# Eojin Han — academic website
 
-[![Screenshot](.github/preview.webp)](https://hugoblox.com/templates/)
+A research-focused website built with [Academic Pages](https://github.com/academicpages/academicpages.github.io), based on Minimal Mistakes and Jekyll.
 
-The Hugo **Academic CV Template** empowers you to easily create your job-winning online resumé, showcase your academic publications, and create online courses or knowledge bases to grow your audience.
+## Local development
 
-[![Get Started](https://img.shields.io/badge/-Get%20started-ff4655?style=for-the-badge)](https://hugoblox.com/templates/)
-[![Discord](https://img.shields.io/discord/722225264733716590?style=for-the-badge)](https://discord.com/channels/722225264733716590/742892432458252370/742895548159492138)  
-[![Twitter Follow](https://img.shields.io/twitter/follow/GetResearchDev?label=Follow%20on%20Twitter)](https://twitter.com/GetResearchDev)
+Install Ruby **3.3.8** (see `.ruby-version`), then:
 
-️**Trusted by 250,000+ researchers, educators, and students.** Highly customizable via the integrated **no-code, Hugo Blox Builder**, making every site truly personalized ⭐⭐⭐⭐⭐
+```sh
+bundle install
+bundle exec jekyll serve --host 127.0.0.1
+```
 
-Easily write technical content with plain text Markdown, LaTeX math, diagrams, RMarkdown, or Jupyter, and import publications from BibTeX.
+For a production build and internal-link check:
 
-[Check out the latest demo](https://academic-demo.netlify.app/) of what you'll get in less than 10 minutes, or [get inspired by our academics and research groups](https://hugoblox.com/creators/).
+```sh
+JEKYLL_ENV=production bundle exec jekyll build --strict_front_matter
+bundle exec ruby scripts/check_site.rb
+```
 
-The integrated [**Hugo Blox Builder**](https://hugoblox.com) and CMS makes it easy to create a beautiful website for free. Edit your site in the CMS (or your favorite editor), generate it with [Hugo](https://github.com/gohugoio/hugo), and deploy with GitHub or Netlify. Customize anything on your site with widgets, light/dark themes, and language packs.
+In the prepared Codex environment, first set:
 
-- 👉 [**Get Started**](https://hugoblox.com/templates/)
-- 📚 [View the **documentation**](https://docs.hugoblox.com/)
-- 💬 [Chat with the **Hugo Blox Builder community**](https://discord.gg/z8wNYzb) or [**Hugo community**](https://discourse.gohugo.io)
-- 🐦 Twitter: [@GetResearchDev](https://twitter.com/GetResearchDev) [@GeorgeCushen](https://twitter.com/GeorgeCushen) [#MadeWithHugoBlox](https://twitter.com/search?q=%23MadeWithHugoBlox&src=typed_query)
-- ⬇️ **Automatically import your publications from BibTeX** with the [Hugo Academic CLI](https://github.com/GetRD/academic-file-converter)
-- 💡 [Suggest an improvement](https://github.com/HugoBlox/hugo-blox-builder/issues)
-- ⬆️ **Updating?** View the [Update Guide](https://docs.hugoblox.com/reference/update/) and [Release Notes](https://github.com/HugoBlox/hugo-blox-builder/releases)
+```sh
+export PATH="/workspace/.tools/ruby-3.3.8/bin:$PATH"
+export BUNDLE_PATH=/workspace/.cache/jekyll-gems
+export BUNDLE_USER_HOME=/workspace/.cache/bundle
+```
 
-## We ask you, humbly, to support this open source movement
+## Editing content
 
-Today we ask you to defend the open source independence of the Hugo Blox Builder and themes 🐧
+- `_config.yml`: name, affiliation, contact links, and site settings.
+- `_pages/about.md`: biography and research interests.
+- `_pages/research.html`: research index; journal articles come from `_publications/`.
+- `_publications/*.md`: publication metadata, abstracts, and research perspectives.
+- `_pages/teaching.md` and `_pages/cv.md`: teaching and CV summaries.
+- `uploads/resume.pdf`: downloadable CV, preserving the original URL.
+- `_data/navigation.yml`: top navigation.
+- `_sass/_personal.scss`: small styling adjustments to Academic Pages.
+- `files/*.bib`: individual BibTeX citations.
 
-We're an open source movement that depends on your support to stay online and thriving, but 99.9% of our creators don't give; they simply look the other way.
+GitHub Actions builds and validates pull requests, and deploys pushes to `main` to GitHub Pages. The repository's Pages source should be **GitHub Actions**, as with the previous Hugo workflow.
 
-### [❤️ Click here to become a Sponsor, unlocking awesome perks such as _exclusive academic templates and blocks_](https://hugoblox.com/sponsor/)
+## Migration and provenance
 
-<!--
-<p align="center"><a href="https://hugoblox.com/templates/" target="_blank" rel="noopener"><img src="https://hugoblox.com/uploads/readmes/academic_logo_200px.png" alt="Hugo Academic Theme for Hugo Blox Builder"></a></p>
--->
+Theme files were imported from Academic Pages commit
+`7b958332ce9970cfb6987a049d7684ac615397e8`. Its MIT license is retained in `LICENSE`.
+Personal content comes from the previous site and its existing CV. Publication
+status and scheduled teaching entries have not been silently updated beyond
+those sources. The original BibTeX files repeated the queue-inference citation;
+the new citations now match each paper's existing metadata.
 
-## Demo image credits
+The original Hugo source (`content/`, `config/`, `layouts/`, `static/`,
+`assets/media/`, and related root configuration files) is retained for reference
+and excluded from Jekyll output. Its starter documentation is in
+`docs/legacy-hugo-readme.md`. Old Hugo deployment and publication-import workflows
+have been replaced by `.github/workflows/jekyll.yml`.
 
-- [Unsplash](https://unsplash.com)
-
-## Latest news
-
-<!--START_SECTION:news-->
-
-- [Easily make an academic CV website to get more cites and grow your audience 🚀](https://hugoblox.com/blog/easily-make-academic-website/)
-- [What&#39;s new in v5.2?](https://hugoblox.com/blog/whats-new-in-v5.2/)
-- [What&#39;s new in v5.1?](https://hugoblox.com/blog/whats-new-in-v5.1/)
-- [Version 5.0 (February 2021)](https://hugoblox.com/blog/version-5.0-february-2021/)
-- [Version 5.0 Beta 3 (February 2021)](https://hugoblox.com/blog/version-5.0-beta-3-february-2021/)
-<!--END_SECTION:news-->
+The home page, `/publication/<slug>/` paper URLs, and `/uploads/resume.pdf` are
+preserved. `/publication/`, `/publications/`, `/experience/`, and `/authors/admin/`
+redirect to their current pages. Unused demo posts, projects, and courses are not
+published.

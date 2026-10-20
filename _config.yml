@@ -1,0 +1,98 @@
+locale: en-US
+site_theme: default
+title: Eojin Han
+title_separator: "|"
+name: Eojin Han
+description: "Eojin Han — Operations Research & Operations Management. Robust optimization, healthcare operations, supply chains, and service systems."
+url: https://eojin-han.github.io
+baseurl: ""
+repository: Eojin-Han/eojin-han.github.io
+author:
+  avatar: profile.jpg
+  name: Eojin Han
+  bio: "Assistant Professor<br>IT, Analytics, and Operations<br>Mendoza College of Business"
+  employer: University of Notre Dame
+  location: Notre Dame, Indiana
+  email: ehan3@nd.edu
+  googlescholar: https://scholar.google.com/citations?user=7VvJLnQAAAAJ
+  linkedin: eojin-han-772ab7b1
+breadcrumbs: false
+read_more: disabled
+words_per_minute: 160
+future: false
+comments:
+  provider: false
+analytics:
+  provider: false
+atom_feed:
+  hide: true
+og_image: profile.jpg
+social:
+  type: Person
+  name: Eojin Han
+  links:
+    - https://scholar.google.com/citations?user=7VvJLnQAAAAJ
+    - https://www.linkedin.com/in/eojin-han-772ab7b1/
+include: [_pages]
+exclude:
+  - .bundle
+  - .github
+  - .jekyll-cache
+  - vendor
+  - node_modules
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - LICENSE.md
+  - scripts
+  - docs
+  - content
+  - config
+  - layouts
+  - static
+  - resources
+  - assets/media
+  - assets/js/_main.js
+  - assets/js/plugins
+  - assets/js/vendor
+  - go.mod
+  - go.sum
+  - hugoblox.yaml
+  - netlify.toml
+  - hugo_stats.json
+encoding: utf-8
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+collections:
+  publications:
+    output: true
+    permalink: /publication/:path/
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: single
+      author_profile: true
+      comments: false
+      share: false
+      related: false
+sass:
+  sass_dir: _sass
+  style: compressed
+timezone: America/Indiana/Indianapolis
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jekyll-gist
+  - jekyll-paginate
+  - jemoji
+compress_html:
+  clippings: all
+  ignore:
+    envs: development

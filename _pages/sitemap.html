@@ -1,0 +1,13 @@
+---
+permalink: /sitemap/
+title: Sitemap
+---
+<ul>
+  <li><a href="/">About</a></li>
+  <li><a href="/research/">Research</a></li>
+  <li><a href="/teaching/">Teaching</a></li>
+  <li><a href="/cv/">CV</a></li>
+  {% for paper in site.publications %}
+  <li><a href="{{ paper.url }}">{{ paper.title }}</a></li>
+  {% endfor %}
+</ul>
