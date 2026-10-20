@@ -30,7 +30,7 @@ export BUNDLE_USER_HOME=/workspace/.cache/bundle
 
 - `_config.yml`: name, affiliation, contact links, and site settings.
 - `_pages/about.md`: biography and research interests.
-- `_pages/research.html`: research index; journal articles come from `_publications/`.
+- `_pages/research.html`: research index, including the publisher-linked ORL article and preprint; papers with local detail pages come from `_publications/`.
 - `_publications/*.md`: publication metadata, abstracts, and research perspectives.
 - `_pages/teaching.md`: teaching history. The CV download remains on About.
 - `uploads/resume.pdf`: downloadable CV, preserving the original URL.
