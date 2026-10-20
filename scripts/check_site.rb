@@ -2,7 +2,7 @@ require "nokogiri"
 require "uri"
 
 root = File.expand_path("../_site", __dir__)
-required = %w[index.html research/index.html teaching/index.html cv/index.html
+required = %w[index.html research/index.html teaching/index.html
               publication/kadapt/index.html publication/lifting/index.html
               publication/periodic_affine/index.html publication/rqi/index.html
               uploads/resume.pdf images/profile.jpg assets/css/main.css]

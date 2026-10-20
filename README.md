@@ -32,7 +32,7 @@ export BUNDLE_USER_HOME=/workspace/.cache/bundle
 - `_pages/about.md`: biography and research interests.
 - `_pages/research.html`: research index; journal articles come from `_publications/`.
 - `_publications/*.md`: publication metadata, abstracts, and research perspectives.
-- `_pages/teaching.md` and `_pages/cv.md`: teaching and CV summaries.
+- `_pages/teaching.md`: teaching history. The CV download remains on About.
 - `uploads/resume.pdf`: downloadable CV, preserving the original URL.
 - `_data/navigation.yml`: top navigation.
 - `_sass/_personal.scss`: small styling adjustments to Academic Pages.
