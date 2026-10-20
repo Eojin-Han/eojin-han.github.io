@@ -14,12 +14,13 @@ redirect_from:
 {% for paper in papers %}
 <article class="research-paper">
   <h3><a href="{{ paper.url | relative_url }}">{{ paper.title }}</a></h3>
-  <p class="paper-authors">{{ paper.authors_text }}</p>
+  {% assign coauthors = paper.authors_text | split: ", " | where_exp: "author", "author != 'Eojin Han'" %}
+  <p class="paper-authors">with {{ coauthors | array_to_sentence_string }}</p>
   <p class="paper-venue"><em>{{ paper.venue }}</em>{% if paper.volume_pages %}, {{ paper.volume_pages }}{% endif %} ({{ paper.year }}){% if paper.publication_status %}. {{ paper.publication_status }}{% endif %}.</p>
   <p class="paper-links"><a href="https://doi.org/{{ paper.doi }}">Journal article</a> <span aria-hidden="true">·</span> <a href="{{ paper.url | relative_url }}">Details &amp; abstract</a></p>
 </article>
 {% endfor %}
 
 <h2>Other publications</h2>
-<p>Jill Wilson, David Morton, Eojin Han, and Eloise Chudik (2021). “Flipping Out for Probability.” <em>Proceedings of the 2021 IISE Annual Conference.</em><br><span class="paper-award">IISE Engineering Education Track Best Paper Award.</span></p>
+<p>“Flipping Out for Probability” (2021), with Jill Wilson, David Morton, and Eloise Chudik. <em>Proceedings of the 2021 IISE Annual Conference.</em><br><span class="paper-award">IISE Engineering Education Track Best Paper Award.</span></p>
 <p>Member of the Management Science Reproducibility Collaboration in Fisar et al. (2024). “Reproducibility in Management Science.” <em>Management Science</em>, 70(3):1343–1356.</p>
