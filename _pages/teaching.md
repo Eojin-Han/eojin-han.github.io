@@ -8,7 +8,8 @@ My teaching spans simulation, optimization, and analytics for operational decisi
 ## University of Notre Dame
 
 **Simulation and Optimization**  
-Undergraduate; Master/MBA elective. Listed as scheduled for Fall 2024 in the available CV.
+MBA elective.  
+Fall 2024, Spring 2025, Fall 2025, Spring 2026, Fall 2026.
 
 ## Southern Methodist University
 
@@ -28,6 +29,3 @@ Fall 2022, Fall 2023.
 
 Teaching assistant for **Probability** (undergraduate, 2016–2019) and **Mathematical Optimization II** (Ph.D., Winter 2017).
 
-## Teaching-related scholarship
-
-“Flipping Out for Probability,” with Jill Wilson, David Morton, and Eloise Chudik, received the **2021 IISE Engineering Education Track Best Paper Award**.
