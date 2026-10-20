@@ -1,6 +1,7 @@
 ---
 permalink: /teaching/
 title: Teaching
+browser_title: Eojin Han
 ---
 
 My teaching spans simulation, optimization, and analytics for operational decision-making.

@@ -1,14 +1,13 @@
 ---
 permalink: /
 title: "About"
+browser_title: Eojin Han
 redirect_from:
   - /about/
   - /authors/admin/
   - /cv/
   - /experience/
 ---
-
-<p class="research-kicker">Operations Research &amp; Operations Management</p>
 
 I am an assistant professor of **IT, Analytics, and Operations** at the [Mendoza College of Business, University of Notre Dame](https://mendoza.nd.edu/). Before joining Notre Dame, I was an assistant professor of Operations Research and Engineering Management at Southern Methodist University.
 
