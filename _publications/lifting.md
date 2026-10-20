@@ -1,17 +1,17 @@
 ---
 title: Nonlinear Decision Rules Made Scalable by Nonparametric Liftings
 permalink: /publication/lifting/
-date: '2024-12-01'
-year: 2024
+date: '2025-04-01'
+year: 2025
 authors_text: Eojin Han, Omid Nohadani
 venue: Management Science
 doi: 10.1287/mnsc.2024.4988
 summary: Nonparametric liftings that make nonlinear decision rules scalable for multistage
   robust optimization.
-publication_status: Article in Advance
+volume_pages: "71(4):3449–3471"
 ---
 
-Eojin Han, Omid Nohadani. *Management Science* (2024).
+Eojin Han, Omid Nohadani. *Management Science*, 71(4):3449–3471 (2025).
 
 [Journal article](https://doi.org/10.1287/mnsc.2024.4988) · [BibTeX](/files/lifting.bib)
 
