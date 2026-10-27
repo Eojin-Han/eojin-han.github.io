@@ -19,7 +19,7 @@ redirect_from:
 {% assign papers = site.publications | sort: "date" | reverse %}
 {% for paper in papers %}
 <article class="research-paper journal-paper">
-  <h3><a href="{{ paper.url | relative_url }}">{{ paper.title }}</a></h3>
+  <h3><a href="https://doi.org/{{ paper.doi }}">{{ paper.title }}</a></h3>
   {% assign coauthors = paper.authors_text | split: ", " | where_exp: "author", "author != 'Eojin Han'" %}
   <p class="paper-authors">with {{ coauthors | array_to_sentence_string }}</p>
   <p class="paper-venue"><em>{{ paper.venue }}</em>{% if paper.volume_pages %}, {{ paper.volume_pages }}{% endif %} ({{ paper.year }}){% if paper.publication_status %}. {{ paper.publication_status }}{% endif %}.</p>
@@ -29,7 +29,7 @@ redirect_from:
 
 <h2>Preprints</h2>
 <article class="research-paper preprint">
-  <h3><a href="https://arxiv.org/abs/2606.06927">Scalable Finite Adaptability via Polyhedral Partition and Learning</a></h3>
+  <h3><a href="https://doi.org/10.48550/arXiv.2606.06927">Scalable Finite Adaptability via Polyhedral Partition and Learning</a></h3>
   <p class="paper-authors">with Zolykha Rezaei and Ningji Wei</p>
 </article>
 
