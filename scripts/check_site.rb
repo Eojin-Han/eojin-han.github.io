@@ -30,6 +30,6 @@ home = File.read(File.join(root, "index.html"))
 abort "Missing personal content" unless home.include?("Eojin Han") && home.include?("Notre Dame")
 research = Nokogiri::HTML(File.read(File.join(root, "research/index.html")))
 abort "Expected five journal articles" unless research.css(".journal-paper").length == 5
-abort "Expected one preprint" unless research.css(".preprint").length == 1
+abort "Expected two preprints" unless research.css(".preprint").length == 2
 abort failures.uniq.join("\n") unless failures.empty?
-puts "Verified #{pages.length} HTML pages, internal links/assets, five journal articles, one preprint, and CV."
+puts "Verified #{pages.length} HTML pages, internal links/assets, five journal articles, two preprints, and CV."
