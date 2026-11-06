@@ -14,6 +14,12 @@ jobs:
       - uses: actions/github-script@v8
         with:
           script: |
+            const healthResponse = await fetch('https://www.githubstatus.com/api/v2/summary.json');
+            const health = await healthResponse.json();
+            core.notice(JSON.stringify({status: health.status, components: health.components.filter(c => /Pages|Actions/i.test(c.name)).map(c => ({name: c.name, status: c.status})), incidents: health.incidents.map(i => ({name: i.name, status: i.status, shortlink: i.shortlink}))}), {title: 'GitHub service health'});
+            const live = await fetch('https://eojin-han.github.io/research/', {cache: 'no-store'});
+            const html = await live.text();
+            core.notice(JSON.stringify({http_status: live.status, contains_new_preprint: html.includes('Fairness in Turn: Order Randomization in Sequential Resource Allocation')}), {title: 'Live website verification'});
             const repo = { owner: context.repo.owner, repo: context.repo.repo };
             const pages = await github.request('GET /repos/{owner}/{repo}/pages', repo);
             core.notice(JSON.stringify({status: pages.data.status, build_type: pages.data.build_type, html_url: pages.data.html_url, cname: pages.data.cname, source: pages.data.source}), {title: 'Pages configuration'});
