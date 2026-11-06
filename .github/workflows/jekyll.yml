@@ -45,6 +45,7 @@ jobs:
           script: |
             const repo = { owner: context.repo.owner, repo: context.repo.repo };
             const pages = await github.request('GET /repos/{owner}/{repo}/pages', repo);
+            core.notice(JSON.stringify({status: pages.data.status, build_type: pages.data.build_type, html_url: pages.data.html_url, cname: pages.data.cname, source: pages.data.source}), {title: 'Pages configuration'});
             await core.summary.addHeading('Pages configuration').addCodeBlock(JSON.stringify({
               status: pages.data.status, build_type: pages.data.build_type,
               html_url: pages.data.html_url, cname: pages.data.cname,
@@ -56,10 +57,12 @@ jobs:
               const logs = await github.rest.actions.downloadJobLogsForWorkflowRun({...repo, job_id: job.id});
               const text = typeof logs.data === 'string' ? logs.data : JSON.stringify(logs.data);
               const lines = text.split('\n').filter(line => /Created deployment|Current status:|Deployment failed|Error:/.test(line));
+              core.notice(lines.join('\n'), {title: 'Previous deployment response'});
               await core.summary.addHeading('Previous deployment response').addCodeBlock(lines.join('\n')).write();
               const match = text.match(/Created deployment for [a-f0-9]+, ID: ([a-zA-Z0-9_-]+)/);
               if (match) {
                 const result = await github.request('GET /repos/{owner}/{repo}/pages/deployments/{deployment_id}', {...repo, deployment_id: match[1]});
+                core.notice(JSON.stringify(result.data), {title: 'Pages deployment status'});
                 await core.summary.addHeading('Pages deployment status').addCodeBlock(JSON.stringify(result.data, null, 2), 'json').write();
               }
             }
