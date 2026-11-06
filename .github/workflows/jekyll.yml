@@ -34,10 +34,35 @@ jobs:
     permissions:
       pages: write
       id-token: write
+      actions: read
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - name: Diagnose Pages deployment
+        uses: actions/github-script@v8
+        with:
+          script: |
+            const repo = { owner: context.repo.owner, repo: context.repo.repo };
+            const pages = await github.request('GET /repos/{owner}/{repo}/pages', repo);
+            await core.summary.addHeading('Pages configuration').addCodeBlock(JSON.stringify({
+              status: pages.data.status, build_type: pages.data.build_type,
+              html_url: pages.data.html_url, cname: pages.data.cname,
+              source: pages.data.source
+            }, null, 2), 'json').write();
+            const jobs = await github.rest.actions.listJobsForWorkflowRun({...repo, run_id: 42269146538});
+            const job = jobs.data.jobs.find(j => j.name === 'deploy');
+            if (job) {
+              const logs = await github.rest.actions.downloadJobLogsForWorkflowRun({...repo, job_id: job.id});
+              const text = typeof logs.data === 'string' ? logs.data : JSON.stringify(logs.data);
+              const lines = text.split('\n').filter(line => /Created deployment|Current status:|Deployment failed|Error:/.test(line));
+              await core.summary.addHeading('Previous deployment response').addCodeBlock(lines.join('\n')).write();
+              const match = text.match(/Created deployment for [a-f0-9]+, ID: ([a-zA-Z0-9_-]+)/);
+              if (match) {
+                const result = await github.request('GET /repos/{owner}/{repo}/pages/deployments/{deployment_id}', {...repo, deployment_id: match[1]});
+                await core.summary.addHeading('Pages deployment status').addCodeBlock(JSON.stringify(result.data, null, 2), 'json').write();
+              }
+            }
       - name: Check GitHub Pages configuration
         uses: actions/configure-pages@v6
       - name: Deploy
